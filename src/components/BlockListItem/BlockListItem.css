@@ -1,0 +1,27 @@
+.BlockListItem {
+  border-bottom: 1px solid black;
+  padding: 5px 25px 5px 0;
+  position: relative;
+  word-break: break-all;
+}
+
+.BlockListItem:last-of-type {
+  border-bottom: none;
+}
+
+.BlockListItem--chevron {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+}
+
+.BlockListItem--chevron.active {
+  transform: rotate(180deg);
+}
+
+.BlockListItem pre {
+  background-color: rgb(230, 230, 230);
+  overflow: scroll;
+  max-height: 300px;
+  padding: 20px;
+}

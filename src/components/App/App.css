@@ -1,0 +1,53 @@
+.App--header {
+  background-color: black;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.App--header-container {
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.App--load-button {
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+.App--load-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.App--load-button:disabled {
+  background-color: rgb(200, 200, 200);
+  border-color: rgb(200, 200, 200);
+  color: black;
+}
+
+.App--notice {
+  text-align: center;
+}
+
+.App--notice-spinner {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+  .App--header-container,
+  .App main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
