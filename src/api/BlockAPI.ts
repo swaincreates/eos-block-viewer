@@ -3,7 +3,8 @@ import { GetBlockResult } from "../interfaces";
 
 class BlockAPI {
   private blocks: GetBlockResult[] = [];
-  private rpc = new JsonRpc("https://api.eosnewyork.io");
+  // Apparently, https://api.eosnewyork.io no longer works, found new URL on github issue:
+  private rpc = new JsonRpc("https://eos.greymass.com:443");
 
   // Note: Could add perf to only fetch blocks that arent loaded, but I believe there are
   //       10 new blocks every 5 seconds if I understand this right, so doesnt seem very helpful
